@@ -1,0 +1,367 @@
+$mavi: #134fae;
+$sari: #E3CB25;
+$gri: #8a9ab4;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 1412px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 375px) {
+
+    .header{
+        width: 100%;
+        height: 64px;
+        background: $mavi;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .navbar-brand{
+            padding: 5% 4%;
+            img{
+                width: 89px;
+                height: 28px;
+            }
+        }
+
+        .header-right{
+            width: 100px;
+            height: 100%;
+            
+            .uye{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .user{
+                    background: #fff;
+                    padding: 10px;
+                    border-radius: 50%;
+                    border: 2px solid rgb(91, 172, 164);
+                }
+            }
+        }
+    }
+    .main{
+            width: 100%;
+            height: 600px;
+            background: linear-gradient(to right,#010426, #202f5a);
+
+            .bireysel{
+                color: #fff;
+                font-size: 28px;
+                line-height: 36px;
+                padding: 5% 4%;
+            }
+            
+            .uyelik{
+                width: 100%;
+                height: 68%;
+                background: #fff;
+
+                .giris-uyelik{
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .giris{
+                        width: 50%;
+                        height: 100%;
+                        text-decoration: none;
+                        border-bottom: 4px solid $mavi;
+
+                        .giris-text-1{
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: $mavi;
+                            margin-left: 16px;
+                            margin-top: 13px;
+                        }
+
+                        .giris-text-2{
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: $mavi;
+                            margin-left: 16px;
+                        }
+                    }
+
+                    .kayit{
+                        width: 50%;
+                        height: 100%;
+                        text-decoration: none;
+                        border-bottom: 4px solid transparent;
+
+                        .kayit-text-1{
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: $gri;
+                            margin-left: 16px;
+                            margin-top: 13px;
+                        }
+
+                        .kayit-text-2{
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: $gri;
+                            margin-left: 16px;
+                        }
+                    }
+                }
+
+                .giris-menu{
+                    width: 100%;
+                    height: 80.1%;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px 0;
+
+                    .opet-giris-text{
+                        width: 95%;
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+
+                    .gsm{
+                        width: 95%;
+                        height: 48px;
+                        border-radius: 5px;
+                        border: 1px solid rgba(0,0,0,0.2);
+                        padding: 0 20px;
+                    }
+
+
+                    .giris-yap-buton{
+                        background: $sari;
+                        color: $mavi;
+                        border-radius: 5px;
+                        width: 95%;
+                        height: 48px;display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        button{
+                            color: $mavi;
+                            background: $sari;
+                        }
+                    }
+                    
+
+                    .uye-ol-buton{
+                        background: $mavi;
+                        color: $sari;
+                        border-radius: 5px;
+                        width: 95%;
+                        height: 48px;display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        button{
+                            color: #fff;
+                            background: $mavi;
+                        }
+                    }
+                }
+            }
+
+            .otobilim{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 12px;
+
+                .otobilim-box{
+                    width: 95%;
+                    height: 75%;
+                    background: #fff;
+                    border-radius: 15px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 15px 0;
+
+                    .text{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        height: 100%;
+                        line-height: 30px;
+                        a{
+                            color: $mavi;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    .footer{
+        width: 100%;
+        height: 380px;
+        background: $mavi;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .tel{
+            margin-top: 30px;
+        }
+
+        .icons{
+            width: 90%;
+            height: 80px;
+            display: flex;
+            justify-content: space-;
+            align-items: center;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+
+            .thy{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: 35%;
+                img{
+                    width:100%;
+                }
+            }
+
+            .fuchs{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: 35%;
+                img{
+                    width:70%;
+                    margin-left: 40px;
+                }
+            }
+
+            .sunpet{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: 35%;
+                img{
+                    width:70%;
+                    margin-left: 35px;
+                }
+            }
+        }
+
+        .download{
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            
+            .download-text{
+            color: rgba(255,255,255,0.2);
+            padding: 0 20px;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: -0.17px;
+            }
+
+            .download-buttons{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 12px;
+                padding:  0 10px;
+                .downloadbutton{
+                    width: 45%;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            
+    }
+
+    }
+
+    .info{
+        width: 100%;
+        height: 368px;
+
+        .icons{
+            width: 100%;
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            a{
+                padding: 45px 24px;
+            }
+        }
+
+        .list{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            text-align: center;
+            li{
+                line-height: 35px;
+                font-size: 13px;
+                a{
+                    color: #162133;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+        }
+
+        .copyright{
+            width: 100%;
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            a,p{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+
+            p{
+                font-size: 12px;
+                line-height: 24px;
+                color: #162133;
+            }
+        }
+    }
+}
