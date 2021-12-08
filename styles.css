@@ -42,6 +42,12 @@ html, body {
     width: 89px;
     height: 28px;
   }
+  .header .navbar-brand-pc {
+    display: none;
+  }
+  .header .header-right-pc {
+    display: none;
+  }
   .header .header-right {
     width: 100px;
     height: 100%;
@@ -85,12 +91,19 @@ html, body {
   .main .bireysel p {
     text-align: left;
   }
-  .main .uyelik {
+  .main .main-right .opet-mobil {
+    display: none;
+  }
+  .main .boxes {
+    width: 100%;
+    height: 100%;
+  }
+  .main .boxes .uyelik {
     width: 100%;
     height: 65%;
     background: #fff;
   }
-  .main .uyelik .giris-uyelik {
+  .main .boxes .uyelik .giris-uyelik {
     width: 100%;
     height: 20%;
     display: -webkit-box;
@@ -103,52 +116,52 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .main .uyelik .giris-uyelik .giris {
+  .main .boxes .uyelik .giris-uyelik .giris {
     width: 50%;
     height: 100%;
     text-decoration: none;
     border-bottom: 4px solid #134fae;
   }
-  .main .uyelik .giris-uyelik .giris .giris-text-1 {
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-1 {
     font-size: 18px;
     line-height: 28px;
     color: #134fae;
     margin-left: 16px;
     margin-top: 13px;
   }
-  .main .uyelik .giris-uyelik .giris .giris-text-2 {
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-2 {
     font-size: 14px;
     line-height: 22px;
     color: #134fae;
     margin-left: 16px;
   }
-  .main .uyelik .giris-uyelik .kayit {
+  .main .boxes .uyelik .giris-uyelik .kayit {
     width: 50%;
     height: 100%;
     text-decoration: none;
     border-bottom: 4px solid transparent;
   }
-  .main .uyelik .giris-uyelik .kayit .kayit-text-1 {
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-1 {
     font-size: 18px;
     line-height: 28px;
     color: #8a9ab4;
     margin-left: 16px;
     margin-top: 13px;
   }
-  .main .uyelik .giris-uyelik .kayit .kayit-text-2 {
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-2 {
     font-size: 14px;
     line-height: 22px;
     color: #8a9ab4;
     margin-left: 16px;
   }
-  .main .uyelik .giris-content {
+  .main .boxes .uyelik .giris-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 80%;
   }
-  .main .uyelik .giris-content .giris-menu {
+  .main .boxes .uyelik .giris-content .giris-menu {
     width: 100%;
     height: 100%;
     display: -webkit-box;
@@ -165,20 +178,20 @@ html, body {
             align-items: center;
     padding: 20px 0;
   }
-  .main .uyelik .giris-content .giris-menu .opet-giris-text {
+  .main .boxes .uyelik .giris-content .giris-menu .opet-giris-text {
     width: 95%;
     font-size: 18px;
     line-height: 28px;
   }
-  .main .uyelik .giris-content .giris-menu .gsm {
+  .main .boxes .uyelik .giris-content .giris-menu .gsm {
     width: 95%;
     height: 48px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0 20px;
   }
-  .main .uyelik .giris-content .giris-menu .giris-yap-buton {
-    background: #E3CB25;
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton {
+    background: yellow;
     color: #134fae;
     border-radius: 5px;
     width: 95%;
@@ -194,13 +207,13 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .giris-menu .giris-yap-buton button {
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton button {
     color: #134fae;
-    background: #E3CB25;
+    background: yellow;
   }
-  .main .uyelik .giris-content .giris-menu .uye-ol-buton {
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton {
     background: #134fae;
-    color: #E3CB25;
+    color: yellow;
     border-radius: 5px;
     width: 95%;
     height: 48px;
@@ -215,11 +228,11 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .giris-menu .uye-ol-buton button {
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton button {
     color: #fff;
     background: #134fae;
   }
-  .main .uyelik .giris-content .kayit-menu {
+  .main .boxes .uyelik .giris-content .kayit-menu {
     display: none;
   }
   .main .otobilim {
@@ -234,6 +247,7 @@ html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 25px;
   }
   .main .otobilim .otobilim-box {
     width: 95%;
@@ -496,12 +510,12 @@ html, body {
   .main .bireysel {
     height: 16%;
   }
-  .main .uyelik {
+  .main .boxes .uyelik {
     width: 100%;
     height: 65%;
     background: #fff;
   }
-  .main .uyelik .giris-uyelik {
+  .main .boxes .uyelik .giris-uyelik {
     width: 100%;
     height: 28%;
     display: -webkit-box;
@@ -514,52 +528,52 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .main .uyelik .giris-uyelik .giris {
+  .main .boxes .uyelik .giris-uyelik .giris {
     width: 50%;
     height: 100%;
     text-decoration: none;
     border-bottom: 4px solid #134fae;
   }
-  .main .uyelik .giris-uyelik .giris .giris-text-1 {
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-1 {
     font-size: 18px;
     line-height: 28px;
     color: #134fae;
     margin-left: 16px;
     margin-top: 23px;
   }
-  .main .uyelik .giris-uyelik .giris .giris-text-2 {
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-2 {
     font-size: 14px;
     line-height: 22px;
     color: #134fae;
     margin-left: 16px;
   }
-  .main .uyelik .giris-uyelik .kayit {
+  .main .boxes .uyelik .giris-uyelik .kayit {
     width: 50%;
     height: 100%;
     text-decoration: none;
     border-bottom: 4px solid transparent;
   }
-  .main .uyelik .giris-uyelik .kayit .kayit-text-1 {
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-1 {
     font-size: 18px;
     line-height: 28px;
     color: #8a9ab4;
     margin-left: 16px;
     margin-top: 23px;
   }
-  .main .uyelik .giris-uyelik .kayit .kayit-text-2 {
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-2 {
     font-size: 14px;
     line-height: 22px;
     color: #8a9ab4;
     margin-left: 16px;
   }
-  .main .uyelik .giris-content {
+  .main .boxes .uyelik .giris-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 72%;
   }
-  .main .uyelik .giris-content .giris-menu {
+  .main .boxes .uyelik .giris-content .giris-menu {
     width: 50%;
     height: 100%;
     display: -webkit-box;
@@ -576,20 +590,20 @@ html, body {
             align-items: center;
     padding: 20px 0;
   }
-  .main .uyelik .giris-content .giris-menu .opet-giris-text {
+  .main .boxes .uyelik .giris-content .giris-menu .opet-giris-text {
     width: 95%;
     font-size: 18px;
     line-height: 28px;
   }
-  .main .uyelik .giris-content .giris-menu .gsm {
+  .main .boxes .uyelik .giris-content .giris-menu .gsm {
     width: 95%;
     height: 48px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0 20px;
   }
-  .main .uyelik .giris-content .giris-menu .giris-yap-buton {
-    background: #E3CB25;
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton {
+    background: yellow;
     color: #134fae;
     border-radius: 5px;
     width: 95%;
@@ -605,13 +619,13 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .giris-menu .giris-yap-buton button {
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton button {
     color: #134fae;
-    background: #E3CB25;
+    background: yellow;
   }
-  .main .uyelik .giris-content .giris-menu .uye-ol-buton {
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton {
     background: #134fae;
-    color: #E3CB25;
+    color: yellow;
     border-radius: 5px;
     width: 95%;
     height: 48px;
@@ -624,11 +638,11 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .giris-menu .uye-ol-buton button {
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton button {
     color: #fff;
     background: #134fae;
   }
-  .main .uyelik .giris-content .kayit-menu {
+  .main .boxes .uyelik .giris-content .kayit-menu {
     width: 50%;
     height: 100%;
     display: -webkit-box;
@@ -645,20 +659,20 @@ html, body {
             align-items: center;
     padding: 20px 0;
   }
-  .main .uyelik .giris-content .kayit-menu .opet-giris-text {
+  .main .boxes .uyelik .giris-content .kayit-menu .opet-giris-text {
     width: 95%;
     font-size: 18px;
     line-height: 28px;
   }
-  .main .uyelik .giris-content .kayit-menu .gsm {
+  .main .boxes .uyelik .giris-content .kayit-menu .gsm {
     width: 95%;
     height: 48px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0 20px;
   }
-  .main .uyelik .giris-content .kayit-menu .giris-yap-buton {
-    background: #E3CB25;
+  .main .boxes .uyelik .giris-content .kayit-menu .giris-yap-buton {
+    background: yellow;
     color: #134fae;
     border-radius: 5px;
     width: 95%;
@@ -674,13 +688,13 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .kayit-menu .giris-yap-buton button {
+  .main .boxes .uyelik .giris-content .kayit-menu .giris-yap-buton button {
     color: #134fae;
-    background: #E3CB25;
+    background: yellow;
   }
-  .main .uyelik .giris-content .kayit-menu .uye-ol-buton {
+  .main .boxes .uyelik .giris-content .kayit-menu .uye-ol-buton {
     background: #134fae;
-    color: #E3CB25;
+    color: yellow;
     border-radius: 5px;
     width: 95%;
     height: 48px;
@@ -695,9 +709,12 @@ html, body {
             align-items: center;
     text-decoration: none;
   }
-  .main .uyelik .giris-content .kayit-menu .uye-ol-buton button {
+  .main .boxes .uyelik .giris-content .kayit-menu .uye-ol-buton button {
     color: #fff;
     background: #134fae;
+  }
+  .main .boxes .main-right .opet-mobil {
+    display: none;
   }
   .footer {
     width: 100%;
@@ -791,6 +808,8 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .footer .download .download-text {
     color: rgba(255, 255, 255, 0.2);
@@ -825,6 +844,422 @@ html, body {
   }
   .footer .download .download-buttons .downloadbutton img {
     width: 100%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .header {
+    width: 100%;
+    height: 96px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .navbar-brand {
+    display: none;
+  }
+  .header .navbar-brand-pc {
+    width: 190px;
+    display: block;
+    padding: 4%;
+  }
+  .header .navbar-brand-pc img {
+    width: 128px;
+    height: 40px;
+  }
+  .header .header-right {
+    display: none;
+  }
+  .header .header-right-pc {
+    display: block;
+    width: 90%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .header-right-pc .list {
+    width: 55%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .header-right-pc .list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 90px;
+  }
+  .header .header-right-pc .list ul li {
+    list-style: none;
+    margin: 20px;
+  }
+  .header .header-right-pc .list ul li a {
+    color: #134fae;
+    text-decoration: none;
+  }
+  .header .header-right-pc .list ul li a:hover {
+    text-decoration: underline;
+  }
+  .header .header-right-pc .header-info {
+    width: 45%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .header-right-pc .header-info input {
+    width: 45%;
+    height: 48px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 40px;
+  }
+  .header .header-right-pc .header-info .online-islemler {
+    background: yellow;
+    width: 192px;
+    height: 48px;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 10px;
+    margin-left: -70px;
+    text-decoration: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .header-right-pc .header-info .online-islemler div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .header .header-right-pc .header-info .online-islemler div img {
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .header .header-right-pc .header-info .online-islemler div .text {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #134fae;
+  }
+  .main {
+    height: 570px;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(#010426), to(#202f5a));
+    background: linear-gradient(to right, #010426, #202f5a);
+  }
+  .main .bireysel {
+    height: 16%;
+    padding-left: 150px;
+  }
+  .main .boxes {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .boxes .uyelik {
+    width: 60%;
+    height: 80%;
+    background: #fff;
+    border-radius: 15px;
+    margin-left: 165px;
+  }
+  .main .boxes .uyelik .giris-uyelik {
+    width: 100%;
+    height: 22%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .boxes .uyelik .giris-uyelik .giris {
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    border-bottom: 4px solid #134fae;
+  }
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-1 {
+    font-size: 18px;
+    line-height: 28px;
+    color: #134fae;
+    margin-left: 16px;
+    margin-top: 23px;
+  }
+  .main .boxes .uyelik .giris-uyelik .giris .giris-text-2 {
+    font-size: 14px;
+    line-height: 22px;
+    color: #134fae;
+    margin-left: 16px;
+  }
+  .main .boxes .uyelik .giris-uyelik .kayit {
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+  }
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-1 {
+    font-size: 18px;
+    line-height: 28px;
+    color: #8a9ab4;
+    margin-left: 16px;
+    margin-top: 23px;
+  }
+  .main .boxes .uyelik .giris-uyelik .kayit .kayit-text-2 {
+    font-size: 14px;
+    line-height: 22px;
+    color: #8a9ab4;
+    margin-left: 16px;
+  }
+  .main .boxes .uyelik .giris-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 72%;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 60px;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .opet-giris-text {
+    width: 95%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .gsm {
+    width: 95%;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton {
+    background: yellow;
+    color: #134fae;
+    border-radius: 5px;
+    width: 180px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .giris-yap-buton button {
+    color: #134fae;
+    background: yellow;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton {
+    background: #134fae;
+    color: yellow;
+    border-radius: 5px;
+    width: 95%;
+    height: 48px;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .main .boxes .uyelik .giris-content .giris-menu .uye-ol-buton button {
+    color: #fff;
+    background: #134fae;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 60px;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .opet-giris-text {
+    width: 95%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .gsm {
+    width: 95%;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .giris-yap-buton {
+    background: yellow;
+    color: #134fae;
+    border-radius: 5px;
+    width: 180px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .giris-yap-buton button {
+    color: #134fae;
+    background: yellow;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .uye-ol-buton {
+    background: #134fae;
+    color: yellow;
+    border-radius: 5px;
+    width: 180px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .main .boxes .uyelik .giris-content .kayit-menu .uye-ol-buton button {
+    color: #fff;
+    background: #134fae;
+  }
+  .main .boxes .main-right {
+    width: 30%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .boxes .main-right .otobilim {
+    width: 65%;
+    margin-top: -10px;
+    margin-left: 20px;
+  }
+  .main .boxes .main-right .opet-mobil {
+    margin-left: 30px;
+    display: block;
+  }
+  .main .boxes .main-right .opet-mobil img {
+    width: 66.3%;
+    height: 66%;
+  }
+  .main .boxes .main-right .opet-mobil .foto-alt {
+    background: #fff;
+    width: 66.3%;
+    height: 63%;
+    margin-top: -4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .boxes .main-right .opet-mobil .foto-alt p, .main .boxes .main-right .opet-mobil .foto-alt a {
+    padding: 0 30px;
+  }
+  .main .boxes .main-right .opet-mobil .foto-alt a {
+    text-decoration: none;
+    padding-top: 20px;
+    color: #134fae;
+  }
+  .main .boxes .main-right .opet-mobil .foto-alt a:hover {
+    text-decoration: underline;
   }
 }
 /*# sourceMappingURL=styles.css.map */
