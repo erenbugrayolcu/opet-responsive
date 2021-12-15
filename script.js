@@ -22,7 +22,7 @@ function tab1(){
   girisIcerik.style.display = "flex";
   kayitIcerik.style.display = "none";
   otobilim.style.display = "flex";
-  footer.style.marginTop = "-20px";
+  footer.style.marginTop = "-5px";
   girisBox.style.display = "flex"
 }
 
