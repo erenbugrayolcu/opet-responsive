@@ -19,12 +19,11 @@ function tab1(){
   giris2.style.color = "#134fae";
   kayit.style.color = "#8a9ab4";
   kayit2.style.color = "#8a9ab4";
-  girisIcerik.style.display = "block";
+  girisIcerik.style.display = "flex";
   kayitIcerik.style.display = "none";
   otobilim.style.display = "flex";
   footer.style.marginTop = "-20px";
   girisBox.style.display = "flex"
-  kayitBox.style.display = "none"
 }
 
 function tab2(){
@@ -39,6 +38,4 @@ function tab2(){
   kayitIcerik.style.display = "block";
   otobilim.style.display = "none";
   footer.style.marginTop = "1420px";
-  girisBox.style.display = "none"
-  kayitBox.style.display = "flex"
 }
