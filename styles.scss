@@ -16,6 +16,7 @@ html,body{
     height: 1329px;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to right,#010426, #202f5a);
 }
 
 @media (min-width: 375px),(max-width: 375px) {
@@ -69,6 +70,12 @@ html,body{
         }
     }
     .main{
+        .tab-content {
+            display: none;
+          }
+          .tab-content.active {
+            display: block;
+          }
             width: 100%;
             height: 575px;
             background: linear-gradient(to right,#010426, #202f5a);
@@ -111,6 +118,12 @@ html,body{
                             height: 100%;
                             text-decoration: none;
                             border-bottom: 4px solid $mavi;
+
+                            &:hover{
+                                p{
+                                    color: $mavi;
+                                }
+                            }
     
                             .giris-text-1{
                                 font-size: 18px;
@@ -133,6 +146,12 @@ html,body{
                             height: 100%;
                             text-decoration: none;
                             border-bottom: 4px solid transparent;
+
+                            &:hover{
+                                p{
+                                    color: $mavi;
+                                }
+                            }
     
                             .kayit-text-1{
                                 font-size: 18px;
@@ -152,7 +171,7 @@ html,body{
                     }
                     
                     .giris-content{
-                        display: flex;
+                        display: block;
                         width: 100%;
                         height: 80%;
     
@@ -192,6 +211,7 @@ html,body{
                                 button{
                                     color: $mavi;
                                     background: $sari;
+                                    cursor: pointer;
                                 }
                             }
     
@@ -207,6 +227,7 @@ html,body{
                                 button{
                                     color: #fff;
                                     background: $mavi;
+                                    cursor: pointer;
                                 }
                             }
                             
@@ -215,7 +236,156 @@ html,body{
                         .kayit-menu{
                             display: none;          
                         }
-                }
+                    }
+
+                    .kayit-content{
+                        background: #fff;
+                        width: 100%;
+                        height: 1810px;
+                        display: none;
+                        flex-direction: column;
+
+                        .form-text{
+                            margin-top: 24px;
+                            margin-left: 15px;
+                            margin-right: 56px;
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+
+                        .valids{
+                            width: 100%;
+                            height: 45%;
+                            padding-top: 1px;
+
+                            .valid{
+                                margin-left: 15px;
+                                margin-right: 15px;
+                                margin-top: 20px;
+                                height: 90px;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: flex-start;
+                                flex-direction: column;
+                                p{
+                                    color: $mavi;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                }
+                                input{
+                                    width: 100%;
+                                    height: 48px;
+                                    border: 1px solid $gri;
+                                    padding-left: 15px;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+
+                        .boxes{
+                            width: 100%;
+                            height: 50%;
+                            .tik{
+                                width: 20px;
+                                height: 20px;
+                                background: #13AE59;
+                                padding: 10px;
+                                margin-top: 5px;
+                                border-radius: 5px;
+                                border: 1px solid $gri;
+                            }
+                            .tik-white{
+                                width: 20px;
+                                height: 20px;
+                                background: #fff;
+                                padding: 10px;
+                                margin-top: 5px;
+                                border-radius: 5px;
+                            }
+                            .box{
+                                display: flex;
+                                margin-left: 15px;
+                                margin-right: 22px;
+                                margin-top: 20px;
+                                justify-content: space-between;
+                                align-content: center;
+                                a{
+                                    color: #000;
+                                    text-decoration: underline;
+                                }
+                                p{
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    margin-left: 10px;
+                                }
+                            }
+                            .box-down{
+                                display: flex;
+                                flex-direction: column;
+                                margin-left: 35px;
+                                margin-right: 22px;
+                                margin-top: 20px;
+                                justify-content: space-between;
+                                align-content: center;
+                                p{
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    margin-left: 10px;
+                                }
+                                .options{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-content: center;
+                                    margin-top: 10px;
+                                    .left{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-content: center;
+                                        p{
+                                            margin-top: 5px;
+                                        }
+                                    }
+                                    .right{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-content: center;
+                                        margin-left: 30px;
+                                        p{
+                                            margin-top: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                            a{
+                                text-decoration: none;
+                                width: 90%;
+                                .devam-buton{
+                                    width: 90%;
+                                    height: 48px;
+                                    background: $mavi;
+                                    color: #fff;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-content: center;
+                                    padding-top: 15px;
+                                    border-radius: 5px;
+                                    margin-left: 15px;
+                                    margin-top: 30px;
+
+                                }
+                            }
+
+                            .valid-text{
+                                font-size: 12px;
+                                line-height: 18px;
+                                color: $gri;
+                                margin-left: 15px;
+                                margin-top: 55px;
+                            }
+                            
+                        }
+                        
+                    }
             }
             }
             
@@ -226,7 +396,7 @@ html,body{
                 height: 20%;
                 justify-content: center;
                 align-items: center;
-                margin-top: 25px;
+                margin-top: 15px;
 
                 .otobilim-box{
                     width: 95%;
@@ -269,6 +439,7 @@ html,body{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin-top: -20px;
 
         .footer-top{
             display: none;
@@ -279,7 +450,7 @@ html,body{
         }
 
         .tel{
-            margin-top: 30px;
+            padding-top:30px;
             width: 250px;
         }
 
@@ -367,6 +538,7 @@ html,body{
     .info{
         width: 100%;
         height: 368px;
+        background: #fff;
 
         .icons{
             width: 100%;
@@ -609,9 +781,16 @@ html,body{
                             }
                         }
     
-                    }
+                }
     
-                    
+                .kayit-content{
+                    display: none;
+                    margin-top: -70px;
+
+                    .form-text{
+                        margin-top: 90px;
+                    }
+                }    
                 }
     
                 .main-right{
@@ -623,6 +802,7 @@ html,body{
                 
             }
         }
+        
 
         
         .footer{
@@ -855,7 +1035,7 @@ html,body{
             display: flex;
             .uyelik{
                 width: 60%;
-                height: 80%;
+                height: 75%;
                 background: #fff;
                 border-radius: 15px;
                 margin-left: 165px;
@@ -925,7 +1105,6 @@ html,body{
                             flex-direction: column;
                             align-items: flex-start;
                             padding:60px;
-    
             
                             .opet-giris-text{
                                 width: 95%;
@@ -969,6 +1148,7 @@ html,body{
                                 justify-content: center;
                                 align-items: center;
                                 text-decoration: none;
+                                
                                 button{
                                     color: #fff;
                                     background: $mavi;
@@ -1034,9 +1214,15 @@ html,body{
                             }
                         }
     
-                    }
+                }
     
-                    
+                .kayit-content{
+                    display: none;
+                    .boxes{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }     
                 }
 
                 .main-right{
@@ -1062,7 +1248,7 @@ html,body{
                         .foto-alt{
                             background: #fff;
                             width: 66.3%;
-                            height: 64%;
+                            height: 57%;
                             margin-top: -4px;
                             border-bottom-left-radius: 10px;
                             border-bottom-right-radius: 10px;
@@ -1212,7 +1398,7 @@ html,body{
 
         .info{
             width: 100%;
-            height: 111px;
+            height: 131px;
             display: flex;
             flex-direction: row-reverse;
 

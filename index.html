@@ -54,35 +54,110 @@
         <div class="uyelik">
         
           <div class="giris-uyelik">
-           <a href="#" class="giris">
+           <a href="#" class="giris" id="first-tab" onclick="tab1()">
              <div>
-             <p class="giris-text-1">Giriş</p>
-             <p class="giris-text-2">Hesabına giriş yap</p>
+             <p class="giris-text-1" id="giris-text-1" >Giriş</p>
+             <p class="giris-text-2" id="giris-text-2">Hesabına giriş yap</p>
              </div></a>
-            <a href="#" class="kayit">
+            <a href="#" class="kayit" id="second-tab" onclick="tab2()">
               <div>
-              <p class="kayit-text-1">Yeni Üyelik</p>
-              <p class="kayit-text-2">Opet'e üye ol</p>
+              <p class="kayit-text-1" id="kayit-text-1">Yeni Üyelik</p>
+              <p class="kayit-text-2" id="kayit-text-2">Opet'e üye ol</p>
             </div></a>
           </div>
   
-          <div class="giris-content">
-            <div class="giris-menu">
+          <div class="giris-content" id="giris-content">
+            <div class="giris-menu" id="giris-menu">
               <p class="opet-giris-text">Opet Kart veya GSM numaranızla giriş yapabilirsiniz.</p>
               <input type="text" class="gsm" placeholder="Opet Kart veya GSM numaranız">
               <a href="#" class="giris-yap-buton"><button>Giriş Yap</button></a>
               <a href="#" class="uye-ol-buton"><button>Üye Ol</button></a>
             </div>
-            <div class="kayit-menu">
+            <div class="kayit-menu" id="kayit-menu">
               <p class="opet-giris-text"><b>Üye değil misiniz?</b></p>
               <p class="opet-giris-text">Opet ayrıcalıklarından faydalanmak için hemen üye olabilirsiniz.</p>
-              <a href="#" class="uye-ol-buton"><button>Üye Ol</button></a>
+              <a href="#" class="uye-ol-buton" onclick="tab2()"><button>Üye Ol</button></a>
             </div>
           </div>
+
+          <div class="kayit-content" id="kayit-content">
+            <p class="form-text">Asağıdaki formu doldurarak kolayca OPET'e üye olabilirsin.</p>
+            <div class="valids">
+              <div class="valid">
+                <p><b>Ad*</b></p>
+                <input type="text" placeholder="Adınız">
+              </div>
+              <div class="valid">
+                <p><b>Soyad*</b></p>
+                <input type="text" placeholder="Soyadınız">
+              </div>
+              <div class="valid">
+                <p><b>Cep Tel. No*</b></p>
+                <input type="text" placeholder="(053*) ___ __ __">
+              </div>
+              <div class="valid">
+                <p><b>Doğum Tarihi*</b></p>
+                <input type="date" placeholder="Ör. 01/01/1990">
+              </div>
+              <div class="valid">
+                <p><b>Plaka*</b></p>
+                <input type="text" placeholder="Ör. 34 AAA 01">
+              </div>
+              <div class="valid">
+                <p><b>Kart Numarası*</b></p>
+                <input type="text" placeholder="Ör. TR010203040506">
+              </div>
+              <div class="valid">
+                <p><b>E-Posta Adresi</b></p>
+                <input type="text" placeholder="E-posta adresiniz">
+              </div>
+            </div>
+
+            <div class="boxes">
+              <div class="box">
+                <div class="tik"></div>
+                <p><a href="#">Opet Petrolcülük Anonim Şirketi Opet Kart Veri İşleme Aydınlatma Metni</a>’ni okudum ve bu kapsamda kişisel verilerimin,
+                 ürün ve hizmetlerin pazarlama süreçlerinin planlanması ve icrası amaçlarıyla işlenmesini ve bu kapsamda yukarıda belirtilen iletişim
+                  bilgilerime reklam, promosyon, kampanya ve benzeri ticari elektronik ileti gönderilmesini ve bu amaçla sınırlı olarak Opet’in hizmet
+                   aldığı üçüncü kişilerle paylaşılmasını kabul ediyorum.</p>
+              </div>
+
+              <div class="box-down">
+                <p>Sağladığımız mobil uygulama hizmetlerinin sunumu esnasında mobil uygulama içerisindeki fonksiyonlardan Google haritalar için Google’a , Apple Siri için Apple’a , push notification bildirimden yararlanmanız için Commencis’e  ve dolayısıyla kişisel verilerinizin yurt dışına aktarılmasını kabul ediyor musunuz?</p>
+                <div class="options">
+                  <div class="left">
+                    <div class="tik"></div>
+                    <p>Evet</p>
+                  </div>
+                  <div class="right">
+                    <div class="tik"></div>
+                    <p>Hayır</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="tik"></div>
+                <p><a href="#">Paro Üyeliği Aydınlatma Metni</a>’ni okudum ve bu kapsamda bana özel analiz, tanıtım, pazarlama faaliyetleri, doğrudan postalama çalışmalarının yapılması amacıyla kişisel verilerimin işlenmesini kabul ediyorum. Paro’da Kişisel Verilerinin Nasıl İşlenir?</p>
+              </div>
+
+              <div class="box">
+                <div class="tik-white"></div>
+                <p><a href="#">Aydınlatma Metni</a> doğrultusunda, Paro Programı ve Tanı’ya ait diğer markalar kapsamında Tanı A.Ş. tarafından yukarıda yer alan iletişim bilgilerime reklam, promosyon gibi amaçlarla ticari elektronik ileti gönderilmesini, kişisel verilerimin bu amaçla işlenmesini ve hizmet alınan tedarikçilerle paylaşılmasını kabul ediyorum.</p>
+              </div>
+              <a href="#"><div class="devam-buton">
+                Devam
+              </div></a>
+              <p class="valid-text">* Zorunlu doldurulması gereken alanlar.</p>
+            </div>
+
+            
+          </div>
+
         </div>
   
         <div class="main-right">
-          <div class="otobilim">
+          <div class="otobilim" id="otobilim">
             <div class="otobilim-box">
               <div class="text">
                 <p><b>Otobilim</b></p>
@@ -109,7 +184,7 @@
       
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       
       <div class="footer-top">
         <img class="tel" src="group-7.png" alt="">
@@ -203,5 +278,8 @@
         <p>© 2020 Opet Petrolcülük A.Ş. Tüm Hakları Saklıdır</p>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
