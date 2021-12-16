@@ -1426,6 +1426,194 @@ html, body {
     background: #134fae;
   }
   .main .boxes .uyelik .kayit-content {
+    background: #fff;
+    width: 100%;
+    height: 1810px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .boxes .uyelik .kayit-content .form-text {
+    margin-top: 75px;
+    margin-left: 15px;
+    margin-right: 56px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .main .boxes .uyelik .kayit-content .valids {
+    width: 50%;
+    height: 25%;
+    padding-top: 1px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100% 100%;
+        grid-template-columns: 100% 100%;
+  }
+  .main .boxes .uyelik .kayit-content .valids .valid {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .boxes .uyelik .kayit-content .valids .valid p {
+    color: #134fae;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .main .boxes .uyelik .kayit-content .valids .valid input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #8a9ab4;
+    padding-left: 15px;
+    border-radius: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes {
+    width: 100%;
+    height: 50%;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .tik {
+    width: 20px;
+    height: 20px;
+    background: #13AE59;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #8a9ab4;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .tik-white {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 22px;
+    margin-top: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box a {
+    color: #000;
+    text-decoration: underline;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 10px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 35px;
+    margin-right: 22px;
+    margin-top: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 10px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 10px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .left p {
+    margin-top: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-left: 30px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .box-down .options .right p {
+    margin-top: 5px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes a {
+    text-decoration: none;
+    width: 90%;
+  }
+  .main .boxes .uyelik .kayit-content .boxes a .devam-buton {
+    width: 90%;
+    height: 48px;
+    background: #134fae;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-top: 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+  .main .boxes .uyelik .kayit-content .boxes .valid-text {
+    font-size: 12px;
+    line-height: 18px;
+    color: #8a9ab4;
+    margin-left: 15px;
+    margin-top: 55px;
+  }
+  .main .boxes .uyelik .kayit-content {
     display: none;
   }
   .main .boxes .uyelik .kayit-content .boxes {
