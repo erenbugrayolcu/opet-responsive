@@ -1,15 +1,23 @@
-  let firstTab = document.getElementById('first-tab');
-  let secondTab = document.getElementById('second-tab');
-  let giris = document.getElementById('giris-text-1');
-  let giris2 = document.getElementById('giris-text-2');
-  let kayit = document.getElementById('kayit-text-1');
-  let kayit2 = document.getElementById('kayit-text-2');
-  let girisIcerik = document.getElementById('giris-content');
-  let kayitIcerik = document.getElementById('kayit-content');
-  let otobilim = document.getElementById('otobilim');
-  let footer = document.getElementById('footer');
-  let girisBox = document.getElementById('giris-menu');
-  let kayitBox = document.getElementById('kayit-menu');
+   firstTab = document.getElementById('first-tab');
+   secondTab = document.getElementById('second-tab');
+   giris = document.getElementById('giris-text-1');
+   giris2 = document.getElementById('giris-text-2');
+   kayit = document.getElementById('kayit-text-1');
+   kayit2 = document.getElementById('kayit-text-2');
+   girisIcerik = document.getElementById('giris-content');
+   kayitIcerik = document.getElementById('kayit-content');
+   otobilim = document.getElementById('otobilim');
+   footer = document.getElementById('footer');
+   girisBox = document.getElementById('giris-menu');
+   kayitBox = document.getElementById('kayit-menu');
+   girisButon = document.getElementById('giris-yap-buton')
+   uyeButon = document.getElementById('uye-ol-buton')
+   opetGirisText = document.getElementById('opet-giris-text')
+   girisPlaceholder = document.getElementById('gsm')
+   opetUyeText = document.getElementById('opet-uye-text')
+   opetUyeText2 = document.getElementById('opet-uye-text2')
+   verify = document.getElementById('verification')
+
 
 function tab1(){
   secondTab.style.borderBottom = "none"
@@ -38,4 +46,17 @@ function tab2(){
   kayitIcerik.style.display = "block";
   otobilim.style.display = "none";
   footer.style.marginTop = "1420px";
+}
+
+function girisYap(){
+  girisButon.innerHTML = "Doğrula"
+  girisButon.style.fontSize = "14px"
+  opetGirisText.innerHTML = "SMS olarak gelen şifreyi girerek bilgilerinizi doğrulayın."
+  gsm.placeholder = "SMS Şifresi"
+  opetUyeText.style.display = "none"
+  opetUyeText2.style.display = "none"
+  uyeButon.style.display = "none"
+  gsm.value = "";
+  verify.style.display = "flex"
+  kayitBox.style.display = "none"
 }

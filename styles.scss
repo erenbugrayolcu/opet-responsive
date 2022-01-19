@@ -386,6 +386,12 @@ html,body{
                             }
                             
                         }
+
+                        .auth{
+                            width: 100%;
+                            height: 100%;
+                            background: #13AE59;
+                        }
                         
                     }
             }
@@ -398,7 +404,6 @@ html,body{
                 height: 100px;
                 justify-content: center;
                 align-items: center;
-                background: $background;
 
                 .otobilim-box{
                     width: 97%;
@@ -1214,6 +1219,65 @@ html,body{
                                     color: #fff;
                                     background: $mavi;
                                 }
+                            }
+                        }
+
+                        .verification{
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            display: none;
+
+                            .timer{
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                
+                                .circle{
+                                    width: 112px;
+                                    height: 112px;
+                                    background: $sari;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 36px;
+                                    line-height: 1.33;
+                                    font-weight: bold;
+                                    .inner{
+                                        width: 95px;
+                                        height: 95px;
+                                        background: #fff;
+                                        border-radius: 50%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 36px;
+                                        line-height: 1.33;
+                                        font-weight: bold;
+                                        .countdown{
+                                        
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                            
+                            .timer-text{
+                                width: 303px;
+                                height: 44px;
+                                margin: 40px 0 0;
+                                font-size: 14px;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: 1.57;
+                                letter-spacing: normal;
+                                text-align: center;
+                                color: $gri;
                             }
                         }
     

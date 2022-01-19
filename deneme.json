@@ -1,0 +1,10 @@
+{"name":"John"}
+{"age":"30"}
+
+{
+    "employe":{"name":"Eren", "age":"17", "city":"Istanbul"}
+}
+
+{"blind":true}
+
+{"brain":null}
